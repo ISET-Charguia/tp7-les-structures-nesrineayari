@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct joueur {
+	char nom[20];
+	char date [20];
+	char nationalite [20];
+	char sexe [20];
+}j[20];
+int main(void) {
+	int n,i;
+printf ("donner n");
+scanf ("%d",&n);
+for (i=0;i<n;i++){
+	printf ("entrer le nom \n");
+	scanf ("%s",&j[i].nom);
+	printf ("entrer l date  \n");
+scanf ("%s",&j[i].date);
+	printf ("entrer la nationalite \n");
+	scanf  ("%s",&j[i].nationalite );
+	printf ("entrer la sexe \n");
+	scanf  ("%s",&j[i].sexe);
+
+}
+for (i=0;i<n;i++){
+	if (strcmp("tunis", j[i].nationalite)==0){
+		printf ("nom = %s \t type date = %s \t nationalite= %s \t sexe = %s",j[i].nom,j[i].date,j[i].nationalite,j[i].sexe);
+	}
+}
+	return 0;}
