@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct ordinateur {
+	int serie;
+	int proc;
+	int vitesse;
+	int taille;
+}or[10];
+
+
+int main(void) {
+	int i,max=0,j=0;
+	for (i=0;i<2;i++){
+	printf ("entrer le num serie %d \n",i);
+	scanf ("%d",&or[i].serie);
+	printf ("entrer le num proc \n");
+		scanf ("%d",&or[i].proc);
+	printf ("entrer le vitesse \n");
+	scanf ("%d",&or[i].vitesse);
+	if (or[i].vitesse>max){
+		max=or[i].vitesse;
+		j=i;
+	}
+	printf ("entrer le taille \n");
+	scanf ("%d",&or[i].taille);
+	}
+	printf ("num serie= %d \t type proc= %d \t vitesse= %d \t taille= %d",or[j].serie,or[j].proc,or[j].taille);
+
+
+
+}
